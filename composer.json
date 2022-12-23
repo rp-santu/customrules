@@ -11,8 +11,8 @@
         "rp library"
     ],
     "support": {
-        "docs": "???",
-        "issues": "???"
+        "docs": "https://github.com/bedh-rp/rplibrary/blob/master/README.md",
+        "issues": "https://github.com/bedh-rp/rplibrary/blob/master/CHANGELOG.md"
     },
     "license": "MIT",
     "authors": [
@@ -34,8 +34,8 @@
         "handle": "rp-library",
         "developer": "Bedh Prakash",
         "developerUrl": "https://www.remoteprogrammer.com",
-        "documentationUrl": "???",
-        "changelogUrl": "???",
+        "documentationUrl": "https://github.com/bedh-rp/rplibrary/blob/master/README.md",
+        "changelogUrl": "https://github.com/bedh-rp/rplibrary/blob/master/CHANGELOG.md",
         "class": "remoteprogrammer\\rplibrary\\RpLibrary"
     }
 }
