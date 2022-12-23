@@ -141,7 +141,7 @@ class RpLibrary extends Plugin
     {
         Event::on(CraftVariable::class, CraftVariable::EVENT_INIT, function(Event $event) {
             $variable = $event->sender;
-            $variable->set('rp', RpVariable::class);
+            $variable->set('rplib', RpVariable::class);
         });
     }
 
