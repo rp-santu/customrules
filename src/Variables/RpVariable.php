@@ -2,7 +2,10 @@
 
 namespace remoteprogrammer\rplibrary\Variables;
 
+use Craft;
 use remoteprogrammer\rplibrary\RpLibrary;
+use craft\helpers\ElementHelper;
+use yii\db\Expression;
 
 class RpVariable
 {
@@ -31,7 +34,18 @@ class RpVariable
 	}
 
 	public function registerGlobalJs($nameOrValues, $value = null)
+	{
+		RpLibrary::$plugin->jsGlobals->register($nameOrValues, $value);
+	}
+	
+	public function getColumnNameWithSuffix($columnName)
     {
-        RpLibrary::$plugin->jsGlobals->register($nameOrValues, $value);
+		$fieldHandle = Craft::$app->getFields()->getFieldByHandle($columnName);
+		return ElementHelper::fieldColumnFromField($fieldHandle);
     }
+
+	public function setFindInSetQuery($query, $column, $columnVal, $whereOprType="&")
+	{
+		return ($whereOprType =='&')? $query->andWhere(new Expression('FIND_IN_SET(:column, '.$column.')'))->addParams([':column' => $columnVal]) : $query->orWhere(new Expression('FIND_IN_SET(:column, '.$column.')'))->addParams([':column' => $columnVal]);		
+	}
 }
