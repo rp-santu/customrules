@@ -2,7 +2,7 @@
     "name": "remoteprogrammer/rp-library",
     "description": "Simple useful library",
     "type": "craft-plugin",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "keywords": [
         "craft",
         "cms",
