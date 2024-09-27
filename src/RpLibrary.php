@@ -8,11 +8,11 @@
  * @copyright Copyright (c) 2022 Bedh Prakash
  */
 
-namespace remoteprogrammer\rplibrary;
+namespace rpqa99\rplibrary;
 
 
 use Craft;
-use remoteprogrammer\rplibrary\Variables\RpVariable;
+use rpqa99\rplibrary\Variables\RpVariable;
 use craft\base\Plugin;
 use craft\services\Plugins;
 use craft\events\PluginEvent;

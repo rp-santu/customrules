@@ -1,9 +1,9 @@
 <?php 
 
-namespace remoteprogrammer\rplibrary\Variables;
+namespace rpqa99\rplibrary\Variables;
 
 use Craft;
-use remoteprogrammer\rplibrary\RpLibrary;
+use rpqa99\rplibrary\RpLibrary;
 use craft\helpers\ElementHelper;
 use yii\db\Expression;
 
